@@ -8,7 +8,7 @@ const passportJWT = require("passport-jwt");
 const bcrypt = require("bcrypt");
 const cors = require("cors");
 
-const { db, sequelize, Op } = require("./models");
+const { db, sequelize, Op } = require("./database/models");
 const router = require("./lib/index");
 const passportInitialize = require("./lib/authenticate/passport.config");
 
