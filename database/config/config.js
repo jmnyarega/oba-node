@@ -19,7 +19,7 @@ module.exports = {
     dialect: process.env.DEV_DB_DIALECT,
   },
   production: {
-    use_env_variable: DATABASE_URL,
+    use_env_variable: process.env.DATABASE_URL,
     storage: "./database.sqlite",
     url: process.env.DATABASE_URL,
     dialect: process.env.PROD_DB_DIALECT,
