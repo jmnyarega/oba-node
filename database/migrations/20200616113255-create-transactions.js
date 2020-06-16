@@ -11,6 +11,9 @@ module.exports = {
       transaction: {
         type: Sequelize.STRING,
       },
+      companyId: {
+        type: Sequelize.INTEGER,
+      },
       status: {
         type: Sequelize.STRING,
       },
@@ -49,4 +52,3 @@ module.exports = {
     return queryInterface.dropTable("Transactions");
   },
 };
-

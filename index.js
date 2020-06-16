@@ -1,5 +1,6 @@
 const express = require("express");
 const multer = require("multer");
+const csv = require("csvtojson");
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const passport = require("passport");
@@ -11,6 +12,7 @@ const cors = require("cors");
 const { db, sequelize, Op } = require("./database/models");
 const router = require("./lib/index");
 const passportInitialize = require("./lib/authenticate/passport.config");
+const cleanData = require("./lib/utils/clean");
 
 const filename = Math.floor(Math.random() * 100000000000) + 1;
 
@@ -42,6 +44,8 @@ const context = {
   filename,
   sequelize,
   Op,
+  csv,
+  cleanData,
   passport,
   LocalStrategy,
   jwt,

@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       accSoftware: DataTypes.STRING,
       entity: DataTypes.STRING,
       sales: DataTypes.STRING,
+      userId: DataTypes.INTEGER,
     },
     {}
   );
