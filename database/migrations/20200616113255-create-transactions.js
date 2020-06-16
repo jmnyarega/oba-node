@@ -30,13 +30,13 @@ module.exports = {
         type: Sequelize.STRING,
       },
       quantity: {
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
       },
       unit_amount: {
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
       },
       amount: {
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
       },
       createdAt: {
         allowNull: false,
