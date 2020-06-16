@@ -6,6 +6,11 @@ module.exports = (sequelize, DataTypes) => {
       name: DataTypes.STRING,
       cop: DataTypes.STRING,
       country: DataTypes.STRING,
+      address: DataTypes.STRING,
+      abbr: DataTypes.STRING,
+      accSoftware: DataTypes.STRING,
+      entity: DataTypes.STRING,
+      sales: DataTypes.STRING,
     },
     {}
   );
@@ -14,4 +19,3 @@ module.exports = (sequelize, DataTypes) => {
   };
   return Company;
 };
-
