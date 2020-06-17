@@ -19,7 +19,7 @@ module.exports = {
     dialect: process.env.DEV_DB_DIALECT,
   },
   production: {
-    database: process.env.DATABASE_URL,
+    url: process.env.DATABASE_URL,
     dialect: process.env.PROD_DB_DIALECT,
     dialectOptions: {
       ssl: false,
