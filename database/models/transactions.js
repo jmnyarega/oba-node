@@ -10,9 +10,9 @@ module.exports = (sequelize, DataTypes) => {
       due_date: DataTypes.STRING,
       supplier: DataTypes.STRING,
       item: DataTypes.STRING,
-      quantity: DataTypes.INTEGER,
-      unit_amount: DataTypes.INTEGER,
-      amount: DataTypes.INTEGER,
+      quantity: DataTypes.STRING,
+      unit_amount: DataTypes.STRING,
+      amount: DataTypes.STRING,
     },
     {}
   );
